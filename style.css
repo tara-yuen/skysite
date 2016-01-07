@@ -1,0 +1,184 @@
+div {
+	font-size: 15pt;
+/*	background-color: #199;*/
+	color: white;
+	line-height: 200%;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	font-family: "Quicksand";
+}
+
+div.col-md-4:hover {
+	font-size: 25pt;
+	background-color: #413;
+	color: white;
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+#Rain {
+	border-color: white;
+	border-width: 2px;
+	border-style: solid;
+	background-color: gray;
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+#Sun {
+	border-color: white;
+	border-width: 2px;
+	border-style: solid;
+	background-color: gray;
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+#Fog {
+	border-color: white;
+	border-width: 2px;
+	border-style: solid;
+	background-color: gray;
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+h1 {
+	font-size: 50pt;
+}
+
+.gif {
+	position: relative;
+	display: block;
+	margin-bottom: 10pt;
+    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.gif:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.box {
+    display: block;
+    background-color: #00b2b3;
+    height: 200pt;
+    margin-bottom: 10pt;
+    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.box:hover {
+    background-color: #FFCCCC;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/*li.dropdown:hover ul {
+	display: block;
+}*/
+
+.view {
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+    float: left;
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+/*    box-shadow: 1px 1px 2px #e6e6e6;*/
+    cursor: default;
+    background: #fff url(../images/bgimg.jpg) no-repeat center center
+}
+.border {
+    width: 675px;
+    height: 450px;
+}
+.view .mask, .view .content {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+.view img {
+	width: 600px;
+	height: 400px;
+    display: block;
+    position: relative
+}
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0
+}
+.view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+.view a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+
+.view-first img { 
+    transition: all 0.2s linear;
+}
+.view-first .mask {
+    opacity: 0;
+    background-color: rgba(219,127,8, 0.7); 
+    transition: all 0.4s ease-in-out;
+}
+.view-first h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.view-first p { 
+    transform: translateY(100px);
+    opacity: 0;
+	transition: all 0.2s linear;
+}
+.view-first a.info{
+    opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+.view-first:hover img { 
+	transform: scale(1.1);
+} 
+.view-first:hover .mask { 
+	opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.view-first:hover p {
+    transition-delay: 0.1s;
+}
+.view-first:hover a.info {
+    transition-delay: 0.2s;
+}
